@@ -1,0 +1,134 @@
+﻿
+@{
+    ViewBag.Title = "Ordenar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html lang="en">
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            min-height: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        footer {
+            background-color: blanchedalmond;
+            margin-top: 100px;
+            position: relative;
+            clear: both;
+            height: 100px
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            text-align: center;
+        }
+
+        .centertb {
+            margin-left: auto;
+            margin-right: auto;
+            text-size-adjust: 50px;
+        }
+
+        .right {
+            display: block;
+            text-align: left;
+            padding-left: 50;
+        }
+
+        .z {
+            position: absolute;
+            width: 99%;
+            background-color: blanchedalmond;
+        }
+
+        .y {
+            position: absolute;
+            left: 45%;
+            background-color: blanchedalmond;
+        }
+
+        .x {
+            position: absolute;
+            left: 90%;
+            background-color: blanchedalmond;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd- HTML</title>
+</head>
+<body>
+    <h1>Ordenar</h1>
+    <hr>
+
+    <form action="" id="orden" method="">
+        <h2>Informacion Contacto</h2>
+        <label for="clientName">Nombre:</label>
+        <input type="text" id="clientName" name="clientName"><br></br>
+
+        <label for="clientNumber">Telefono:&nbsp</label>
+        <input type="number" id="clientNumber" name="clientNumber"><br></br>
+
+        <label for="clientEmail">Correo Electronico:&nbsp</label>
+        <input type="email" id="clientEmail" name="clientEmail"><br></br>
+
+        <h2>Tamaño</h2>
+        <select name="tamPastel" id="tamPastel">
+            <option value="pequeño">Pequeño $50</option>
+            <option value="mediano">Mediano $75</option>
+            <option value="grande">Grande $100</option>
+        </select>
+
+        <h2>Sabor</h2>
+        <select name="saborPastel" id="saborPastel">
+            <option value="chocolate">Chocolate $25</option>
+            <option value="fresa">Fresa $27</option>
+            <option value="Vainilla">Vainilla $20</option>
+            <option value="Menta">Menta $30</option>
+        </select>
+        <br />
+        <input type="checkbox" id="sabor2" name="sabor2" value="sabor2">
+        <label for="sabor2">Sabor Extra?</label><br>
+        <select name="saborPastel2" id="saborPastel2">
+            <option value="chocolate">Chocolate $25</option>
+            <option value="fresa">Fresa $27</option>
+            <option value="Vainilla">Vainilla $20</option>
+            <option value="Menta">Menta $30</option>
+        </select>
+
+        <h2>Adornos</h2>
+        <input type="checkbox" id="frosting" name="frosting" value="frosting">
+        <label for="frosting">Frosting $20</label><br>
+
+        <input type="checkbox" id="chispas" name="adorno" value="chispas">
+        <label for="chispas">Chispas $10</label><br>
+
+        <input type="checkbox" id="letras" name="letras" value="letras">
+        <label for="letras">Letras $15</label><br>
+
+        <label for="notas">Notas:</label>
+        <input type="text" id="notas" name="notas"><br><br>
+
+        <label>Fecha entrega: </label>
+        <input type="date" id="fecha1" name="fecha1"><br><br>
+
+        <input type="submit" value="Ordenar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
+
